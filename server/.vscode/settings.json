@@ -1,0 +1,43 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "editor.formatOnSave": true,
+    "[html]": {
+        "editor.formatOnSave": false
+    },
+    "[django-html]": {
+        "editor.formatOnSave": false
+    },
+    "emmet.includeLanguages": {
+        "javascript": "html",
+        "django-html": "html",
+    },
+    "html.format.wrapLineLength": 0,
+    "html.format.wrapAttributes": "aligned-multiple",
+    "html.format.indentHandlebars": true,
+    "html.suggest.html5": true,
+    "html.autoClosingTags": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "editor.linkedEditing": true,
+    "html.format.preserveNewLines": false,
+    "git.ignoreLimitWarning": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--disable=C0115",
+        "--disable=C0114",
+        "--disable=C0116",
+        "--disable=django-not-configured",
+        "--django-settings-module=launchsaas.settings",
+    ]
+}
